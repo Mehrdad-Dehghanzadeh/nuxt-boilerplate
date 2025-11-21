@@ -15,6 +15,10 @@
     "node": ">=20.0.0",
     "npm": ">=9.0.0"
   },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown",
+    "*.{js,md,vue,ts,css,scss,sass}": "prettier --write"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -22,11 +26,17 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "analyze": "nuxt analyze ",
-    "cleanup": "nuxt cleanup"
+    "cleanup": "nuxt cleanup",
+    "prepare": "husky"
   },
   "dependencies": {
     "nuxt": "^4.2.1",
     "vue": "^3.5.24",
     "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "3.6.2"
   }
 }
