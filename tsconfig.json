@@ -14,5 +14,21 @@
     {
       "path": "./.nuxt/tsconfig.node.json"
     }
-  ]
+  ],
+
+  "compilerOptions": {
+    "baseUrl": ".",
+    "typeRoots": ["./types", "./node_modules/@types"],
+    "paths": {
+      "~~/*": ["./*"],
+      "@@/*": ["./*"],
+      "@app/*": ["./app/*"],
+      "@assets/*": ["./app/assets/*"],
+      "@constants/*": ["./app/constants/*"],
+      "@type/*": ["./types/*"],
+      "@models/*": ["./types/models/*"],
+      "@styles": ["./app/assets/styles/global"],
+      "@styles/*": ["./app/assets/styles/global/*"]
+    }
+  }
 }
