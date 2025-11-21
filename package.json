@@ -1,0 +1,32 @@
+{
+  "name": "nuxt-boilerplate",
+  "version": "0.0.0",
+  "type": "module",
+  "private": false,
+  "author": {
+    "name": "Mehrdad Dehghanzadeh",
+    "email": "mehrdad.dehghanzadeh.dev@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mehrdad-Dehghanzadeh/nuxt-boilerplate.git"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "analyze": "nuxt analyze ",
+    "cleanup": "nuxt cleanup"
+  },
+  "dependencies": {
+    "nuxt": "^4.2.1",
+    "vue": "^3.5.24",
+    "vue-router": "^4.6.3"
+  }
+}
