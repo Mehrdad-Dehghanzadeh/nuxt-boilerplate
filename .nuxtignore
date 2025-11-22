@@ -1,0 +1,4 @@
+#ignore components
+app/components/includes/*
+app/components/page-components/*
+app/components/shared/*
