@@ -1,9 +1,3 @@
-<template>
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
-</template>
-
 <script lang="ts" setup>
 useHead({
   titleTemplate: (titleChunk) => {
@@ -11,3 +5,9 @@ useHead({
   }
 })
 </script>
+
+<template>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
+</template>
