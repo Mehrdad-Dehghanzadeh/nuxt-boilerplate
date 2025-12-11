@@ -18,7 +18,8 @@ export default defineNuxtConfig({
     '@type': path.join(__dirname, 'types'),
     '@models': path.join(__dirname, 'types/models'),
     '@assets': path.join(__dirname, 'app/assets'),
-    '@styles': path.join(__dirname, 'app/assets/styles/global')
+    '@styles': path.join(__dirname, 'app/assets/styles/global'),
+    '@apis': path.join(__dirname, 'app/apis')
   },
 
   compatibilityDate: '2025-07-15',
