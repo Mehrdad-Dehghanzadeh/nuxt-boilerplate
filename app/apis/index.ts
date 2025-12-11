@@ -1,5 +1,13 @@
-import type { AxiosInstance } from 'axios'
+import type {
+  AxiosInstance,
+  RawAxiosRequestHeaders,
+  AxiosHeaders,
+  HeadersDefaults
+} from 'axios'
 
-export const defaultHeader = {}
+export const defaultHeader:
+  | RawAxiosRequestHeaders
+  | AxiosHeaders
+  | Partial<HeadersDefaults> = {}
 
 export const createApis = ($axios: AxiosInstance) => ({})
