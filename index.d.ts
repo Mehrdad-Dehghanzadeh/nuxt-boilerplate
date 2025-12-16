@@ -41,3 +41,7 @@ type EnumType = {
 }
 
 type EnumList = Array<EnumType>
+
+interface CustomError<T> extends Error {
+  data?: T
+}
