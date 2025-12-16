@@ -30,7 +30,9 @@
       "@styles": ["./app/assets/styles/global"],
       "@styles/*": ["./app/assets/styles/global/*"],
       "@apis": ["./app/apis"],
-      "@apis/*": ["./app/apis/*"]
+      "@apis/*": ["./app/apis/*"],
+      "@includes": ["./app/components/includes"],
+      "@includes/*": ["./app/components/includes/*"]
     }
   }
 }

@@ -45,3 +45,13 @@ type EnumList = Array<EnumType>
 interface CustomError<T> extends Error {
   data?: T
 }
+
+type TSnackbarType = 'error' | 'info' | 'success' | 'warring'
+
+type TSnackbarConfig =
+  | string
+  | {
+      message?: string
+      delay?: number
+      clearable?: boolean
+    }
