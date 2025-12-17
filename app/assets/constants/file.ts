@@ -1,6 +1,6 @@
 import type { TFiles, FilesOptionType } from '@type/files'
 
-const files: Record<TFiles, FilesOptionType> = {
+export const Files: Record<TFiles, FilesOptionType> = {
   image: {
     extensions: ['jpg', 'png', 'jpeg']
   },
@@ -17,5 +17,3 @@ const files: Record<TFiles, FilesOptionType> = {
     extensions: ['pdf']
   }
 }
-
-export default files

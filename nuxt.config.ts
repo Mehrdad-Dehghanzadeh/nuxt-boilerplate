@@ -11,6 +11,10 @@ export default defineNuxtConfig({
     }
   },
 
+  imports: {
+    dirs: ['~/assets/constants']
+  },
+
   css: [path.join(__dirname, 'app/assets/styles/custom/index.scss')],
 
   alias: {

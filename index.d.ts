@@ -48,10 +48,8 @@ interface CustomError<T> extends Error {
 
 type TSnackbarType = 'error' | 'info' | 'success' | 'warring'
 
-type TSnackbarConfig =
-  | string
-  | {
-      message?: string
-      delay?: number
-      clearable?: boolean
-    }
+type TSnackbarConfig = {
+  message?: string
+  delay?: number
+  clearable?: boolean
+}

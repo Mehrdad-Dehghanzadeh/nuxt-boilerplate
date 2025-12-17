@@ -21,7 +21,7 @@ export function deepFreeze<T>(obj: T): Readonly<T> {
 /**
  *  Check Object Is Empty
  ***************************/
-export function isEmpty(obj: any): boolean {
+export function isEmptyObj(obj: any): boolean {
   return Object.keys(obj).length === 0
 }
 
@@ -29,7 +29,7 @@ export function isEmpty(obj: any): boolean {
  *  Convert Object To Array
  ***************************/
 export function objectToArray(obj: any) {
-  return !isEmpty(obj)
+  return !isEmptyObj(obj)
     ? Object.entries(obj).map(([key, value]) => {
         return { [key]: value }
       })
